@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dactl</title>
-    <description>this should contain a proper description
+    <title>EthanZhang's Blog</title>
+    <description>This is EthanZhang's Blog
 </description>
-    <link>http://localhost:4000/dactl//</link>
-    <atom:link href="http://localhost:4000/dactl//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Sep 2021 09:45:28 +0800</pubDate>
-    <lastBuildDate>Mon, 27 Sep 2021 09:45:28 +0800</lastBuildDate>
+    <link>http://localhost:4000EthanZhangCN.github.io/</link>
+    <atom:link href="http://localhost:4000EthanZhangCN.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Sep 2021 09:56:59 +0800</pubDate>
+    <lastBuildDate>Mon, 27 Sep 2021 09:56:59 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -36,8 +36,8 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 </description>
         <pubDate>Wed, 22 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/welcome-to-dactl</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/welcome-to-dactl</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/welcome-to-dactl</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/welcome-to-dactl</guid>
         
         <category>dactl</category>
         
@@ -119,8 +119,8 @@ precultural theory and the conceptual paradigm of consensus.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 20 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/notices</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/notices</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/notices</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/notices</guid>
         
         <category>dactl</category>
         
@@ -258,8 +258,8 @@ In order to change the font you need to supply it’s name and variants - font w
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 20 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/config-settings</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/config-settings</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/config-settings</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/config-settings</guid>
         
         <category>jekyll</category>
         
@@ -363,8 +363,8 @@ Title of that post (on blog page only) becomes a link to the webpage you set the
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 19 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/yaml-frontmatter</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/yaml-frontmatter</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/yaml-frontmatter</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/yaml-frontmatter</guid>
         
         <category>jekyll</category>
         
@@ -403,14 +403,14 @@ description: &amp;gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;slug&lt;/code&gt; is a mandatory field and defines tag’s slug, accessible at &lt;code class=&quot;highlighter-rouge&quot;&gt;yourblog.com/tag/dactl/&lt;/code&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; instead of spaces here.&lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; is a mandatory field and defines tag’s name, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;Cool Stuff&lt;/code&gt;.&lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; is an optional field, it’s visible on tag’s page.&lt;br /&gt;
-Click &lt;a href=&quot;/dactl/tag/dactl&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;/dactl/tag/howto&quot;&gt;here&lt;/a&gt; to see the difference.&lt;/p&gt;
+Click &lt;a href=&quot;/EthanZhangCN.github.io/tag/dactl&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;/EthanZhangCN.github.io/tag/howto&quot;&gt;here&lt;/a&gt; to see the difference.&lt;/p&gt;
 
 &lt;h2 id=&quot;optional&quot;&gt;Optional&lt;/h2&gt;
 &lt;p&gt;You can configure the Archive page to show ‘Tag box’ underneath the search box - this box will contain all of your blog’s tags with links to them.&lt;/p&gt;
 </description>
         <pubDate>Sat, 18 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/tags-in-dactyl</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/tags-in-dactyl</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/tags-in-dactyl</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/tags-in-dactyl</guid>
         
         <category>dactl</category>
         
@@ -450,8 +450,8 @@ First, let's see how this and the above paragraph looks like in markdown:
 &lt;p class=&quot;notice-alert&quot;&gt;The order is important here - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--break--&amp;gt;&lt;/code&gt; comes &lt;strong&gt;after&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.lead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; and because of that the leading paragraph/ post excerpt has it’s font enlarged both on blog and post pages.&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/post-excerpts-lead-paragraphs</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/post-excerpts-lead-paragraphs</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/post-excerpts-lead-paragraphs</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/post-excerpts-lead-paragraphs</guid>
         
         <category>dactl</category>
         
@@ -510,8 +510,8 @@ Restart your jekyll server and see the change in this post.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 16 Mar 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/footnotes-in-dactl</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/footnotes-in-dactl</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/footnotes-in-dactl</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/footnotes-in-dactl</guid>
         
         <category>dactl</category>
         
@@ -674,8 +674,8 @@ Nullam id &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/dactl//posts/example-content</link>
-        <guid isPermaLink="true">http://localhost:4000/dactl//posts/example-content</guid>
+        <link>http://localhost:4000EthanZhangCN.github.io/posts/example-content</link>
+        <guid isPermaLink="true">http://localhost:4000EthanZhangCN.github.io/posts/example-content</guid>
         
         <category>jekyll</category>
         

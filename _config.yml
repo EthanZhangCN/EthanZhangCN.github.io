@@ -1,13 +1,13 @@
 # Base blog settings
-baseurl                      : "EthanZhangCN.github.io" # the subpath of your site,                         # e.g. /blog/
+baseurl                      : "" # the subpath of your site,                         # e.g. /blog/
                               # set to '' in case of hosting on GitHub
 url                          : "" # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : dactl
+  title                      : EthanZhang's Blog
   description                  : >
-                               this should contain a proper description
+                               This is EthanZhang's Blog
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
