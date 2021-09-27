@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to dactl!"
+title:  "Welcome to Ethan's blog!"
 tags:
   - dactl
   - jekyll

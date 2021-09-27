@@ -6,9 +6,9 @@ url                          : "http://EthanZhangCN.github.io" # the base hostna
                                   # `http://EthanZhangCN.github.io` - for GitHub
 
 blog:
-  title                      : EthanZhang's Blog
+  title                      : Ethan's Blog
   description                  : >
-                               This is EthanZhang's Blog
+                               This is Ethan's Blog
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
