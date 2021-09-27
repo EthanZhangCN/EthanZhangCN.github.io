@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dactl</title>
+    <description>this should contain a proper description
+</description>
+    <link>http://localhost:4000/dactl//</link>
+    <atom:link href="http://localhost:4000/dactl//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Sep 2021 09:45:28 +0800</pubDate>
+    <lastBuildDate>Mon, 27 Sep 2021 09:45:28 +0800</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Welcome to dactl!</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;lt;!–-break-–&amp;gt;
+This launches a web server and auto-regenerates your site when a file is updated.&lt;br /&gt;
+To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 22 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/welcome-to-dactl</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/welcome-to-dactl</guid>
+        
+        <category>dactl</category>
+        
+        <category>jekyll</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Notice blocks</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;By default dactl has a couple of special classes which will turn a paragraph into a notice block when added to it. Read on for information on how to use it.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-create-a-notice-block&quot;&gt;How to create a notice block&lt;/h2&gt;
+&lt;p&gt;Creating notices from your paragraphs works the same way as creating &lt;a href=&quot;LINKILYNKI&quot;&gt;leading post paragraphs&lt;/a&gt;.&lt;br /&gt;
+You need to add a correct class &lt;strong&gt;after&lt;/strong&gt; the paragraph:
+&amp;lt;!–-break-–&amp;gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;Sea otters [hold each other’s paws](https://www.youtube.com/watch?v=eTvX-CkfqRo) when they sleep so they don’t drift apart.  
+That is a fact, look it up on Wikipedia if you don't believe me.
+{: .notice}
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;available-options&quot;&gt;Available options&lt;/h2&gt;
+&lt;h3 id=&quot;regular-notice-block&quot;&gt;Regular notice block&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.notice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;Sea otters &lt;a href=&quot;https://www.youtube.com/watch?v=eTvX-CkfqRo&quot;&gt;hold each other’s paws&lt;/a&gt; when they sleep so they don’t drift apart.&lt;br /&gt;
+That is a fact, look it up on Wikipedia if you don’t believe me.&lt;/p&gt;
+
+&lt;h3 id=&quot;alert-notice-block&quot;&gt;Alert notice block&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.notice-alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice-alert&quot;&gt;If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.&lt;/p&gt;
+
+&lt;h3 id=&quot;success-notice-block&quot;&gt;Success notice block&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.notice-success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice-success&quot;&gt;If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.&lt;/p&gt;
+
+&lt;h2 id=&quot;multi-paragraph-notice-blocks&quot;&gt;Multi-paragraph notice blocks&lt;/h2&gt;
+&lt;p&gt;The easiest solution I found to wrapping more than paragraph into a notice is just inserting it into a markdown-enabled &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt; tag, like this:&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;notice&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;markdown=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.
+
+A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Which, when processed by kramdown, shows up like this:&lt;/p&gt;
+&lt;div class=&quot;notice&quot;&gt;
+  &lt;p&gt;If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.&lt;/p&gt;
+
+  &lt;p&gt;A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/notices</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/notices</guid>
+        
+        <category>dactl</category>
+        
+        <category>howto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Layout settings and more in _config.yml</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;All of the dactl’s configurations has to be set in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file. Read on for explanation of all of the features that you can toggle, including configuring the layout.&lt;/p&gt;
+
+&lt;p&gt;I’ve split dactl’s &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; into two parts. First part should be configured by you, second contains important Jekyll &amp;amp; build settings and you should leave it alone, unless you know what you are doing.
+&amp;lt;!–-break-–&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s go through each line in the first, configurable part:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;# Base blog settings&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;                      &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dactl&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;                &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
+                               &lt;span class=&quot;no&quot;&gt;this should contain a proper description&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Layout configuration&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;logo_path&lt;/span&gt;                  &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;assets/img/dactl.svg&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# path to logo file&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;search_path&lt;/span&gt;                &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# &quot;yourgitusername.github.io&quot;&lt;/span&gt;
+                               &lt;span class=&quot;c1&quot;&gt;# needed for searchbox in archive page&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;hero_layout&lt;/span&gt;                &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# turn on hero layout for blog and posts&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;hero_placeholder&lt;/span&gt;           &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;assets/img/generic_hero.jpg&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# placeholder for hero&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;excerpts&lt;/span&gt;                   &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# show excerpts instead of full post content on blog page&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;inline_footnotes&lt;/span&gt;           &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# enable/disable barefoot inline footnotes&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;titles_only&lt;/span&gt;                &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# titles only on main blog page&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Fonts&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;font&lt;/span&gt;                         &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Rubik&quot;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;-apple-system,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;BlinkMacSystemFont,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Helvetica&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Neue&quot;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;sans-serif'&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;load_google_fonts&lt;/span&gt;            &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Rubik:400,400italic,700,700italic'&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Author info&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;fullname&lt;/span&gt;                  &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Your Name&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;rss&lt;/span&gt;                       &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# generate RSS feed and show it's icon in header&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;mail&lt;/span&gt;                      &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your@email.com&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# change to your e-mail address&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;twitter&lt;/span&gt;                   &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;twitter-user-name&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;github&lt;/span&gt;                    &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;github-user-name&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;youtube&lt;/span&gt;                   &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;youtube-user-name&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;stackoverflow&lt;/span&gt;             &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;stackoverflow-user-name&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;disqus&lt;/span&gt;                    &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dactl&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# your disqus site name&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;google_analytics&lt;/span&gt;          &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 'UA-XXXXXXXX-X'&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;photo&lt;/span&gt;                     &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;uploads/me2.png&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;photo2x&lt;/span&gt;                   &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;uploads/me.png&quot;&lt;/span&gt;
+
+&lt;span class=&quot;s&quot;&gt;baseurl&lt;/span&gt;                      &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/dactl/&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the subpath of your site, e.g. /blog/, set to '' in case of hosting on GitHub pages&lt;/span&gt;
+                                  &lt;span class=&quot;c1&quot;&gt;# i.e. `http://&amp;lt;username&amp;gt;.github.io`&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;                          &lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the base hostname &amp;amp; protocol for your site&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;base-blog-settings&quot;&gt;Base blog settings&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; - title of your blog, both in &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;&lt;/code&gt; tag and in the header.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; - descriptionof your blog, shown in the footer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;layout-settings&quot;&gt;Layout settings&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;logo_path&lt;/code&gt; - Path to an .svg image used as logo&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;search_path&lt;/code&gt; - Path to your blog, needed for the DuckDuckGo’s searchbar found in Archive page.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hero_layout&lt;/code&gt; - true / false - Turn the hero image layout on or off. When turned off you don’t need to supply images and overlays in post’s YAML front matter and the layout gets slightly adjusted.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hero_placeholder&lt;/code&gt; - Path to an image which will be used as a placeholder when there is no hero set for post, optional.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;excerpts&lt;/code&gt; - true or false - Turn post excerpts on or off. When set to &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; you will see full text content for each post on blog page.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;inline_footnotes&lt;/code&gt; - true or false - When set to &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; you will turn off Barefoot.js inline footnotes.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;titles_only&lt;/code&gt; - true or false - When set to true Jekyll will generate blog layout with post titles only. &lt;code class=&quot;highlighter-rouge&quot;&gt;hero_layout&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;excerpts&lt;/code&gt; are overidden by &lt;code class=&quot;highlighter-rouge&quot;&gt;titles_only&lt;/code&gt; when it’s set to &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;fonts&quot;&gt;Fonts&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;font&lt;/code&gt; - Name of the font family used for theme’s typography.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;load_google_fonts&lt;/code&gt; - Choose what font family should be loaded, served by &lt;a href=&quot;https://fonts.google.com&quot;&gt;google fonts&lt;/a&gt;.
+In order to change the font you need to supply it’s name and variants - font weight of 400 and 700 are required.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;author-info&quot;&gt;Author info&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fullname&lt;/code&gt; - Your name and surname or nick, used throughout the blog.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rss&lt;/code&gt; - true or false - Turn the RSS feeds on or off.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mail&lt;/code&gt; - Your e-mail address.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;twitter&lt;/code&gt; - Your twitter username&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;github&lt;/code&gt; - Your Github username&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;youtube&lt;/code&gt; - Your YouTube username&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;stackoverflow&lt;/code&gt; - Your Stackoverflow username&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;disqus&lt;/code&gt; - Your Disqus site name.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;photo&lt;/code&gt; - Avatar or photo of you, used on About page.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;photo2x&lt;/code&gt; - Same as above but in higher resolution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;google-analytics&quot;&gt;Google Analytics&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;google_analytics&lt;/code&gt; - Supply your Google Analytics ID here, if you want to use it.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt; - Subpath of your blog, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;/blog&lt;/code&gt;, leave it empty in case of hosting on Github pages - &lt;code class=&quot;highlighter-rouge&quot;&gt;yourusername.github.io&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/config-settings</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/config-settings</guid>
+        
+        <category>jekyll</category>
+        
+        <category>dactl</category>
+        
+        <category>howto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>YAML front matter in posts</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;In order to use dactl’s post images with overlays you’ll need to learn how to set them. You do that in post’s YAML frontmatter and I’ll show you how.&lt;/p&gt;
+
+&lt;h2 id=&quot;yaml-front-matter&quot;&gt;YAML Front matter&lt;/h2&gt;
+&lt;p&gt;Each Jekyll post starts with YAML Front &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. For example, this is how this post would look like if I wanted to use all of the options:
+&amp;lt;!–-break-–&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;How&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;do&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;dactl&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;theme?'&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dactl&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/hero.jpg&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;overlay&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;purple&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://link-to-some-page.com&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see it has a couple of options, some of them are required by Jekyll (layout, title), some are required by dactl theme when set to default hero layout (hero) and some are completely optional (overlay, link).&lt;br /&gt;
+I’ll go through what each option means, what it affects and how to use it.&lt;/p&gt;
+
+&lt;h3 id=&quot;layout&quot;&gt;Layout&lt;/h3&gt;
+&lt;p&gt;This just tells Jekyll to use post layout.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;layout: post
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;title&quot;&gt;Title&lt;/h3&gt;
+&lt;p&gt;Title of the post as seen at the top of this post.&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;How&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;do&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;dactl&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;theme?'&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;tags&quot;&gt;Tags&lt;/h3&gt;
+&lt;p&gt;This is how you assign multiple tags to a post.&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;s&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dactl&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;hero-image&quot;&gt;Hero image&lt;/h3&gt;
+&lt;p&gt;See that nice picture from unsplash at the top of this page? This is how you set it’s source.&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;s&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/hero.jpg&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;hero-overlay&quot;&gt;Hero overlay&lt;/h3&gt;
+&lt;p&gt;You can choose the color of the image overlay here.
+Currently you can choose from five colors: purple, red, green, blue, orange.
+If you don’t choose a color it will default to a light black.&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;s&quot;&gt;overlay&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;purple&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;link-post&quot;&gt;Link post&lt;/h3&gt;
+&lt;p&gt;I’ve included link post functionality (a’la &lt;a href=&quot;http://daringfireball.net/&quot;&gt;Daring Fireball&lt;/a&gt;) in dactl.&lt;br /&gt;
+If you put webpage’s address in that field then that post becomes a link post.&lt;br /&gt;
+Title of that post (on blog page only) becomes a link to the webpage you set the address to. To access the content of the post you need to click on ‘Read more’ link. To access a link post content in layout with titles only you need to click a meta link which shows up between date and tags.&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;s&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://link-to-some-page.com&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Everything in between those two &lt;code class=&quot;highlighter-rouge&quot;&gt;---&lt;/code&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 19 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/yaml-frontmatter</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/yaml-frontmatter</guid>
+        
+        <category>jekyll</category>
+        
+        <category>dactl</category>
+        
+        <category>howto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Tags in dactl</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;Tags are built using Jekyll’s native categories functionality and you need to add them manually as files before using them in posts. Read on to learn how.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-add-a-new-tag&quot;&gt;How to add a new tag&lt;/h2&gt;
+&lt;p&gt;Please make sure to do the following for each tag:
+&amp;lt;!–-break-–&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Create a .md file within &lt;code class=&quot;highlighter-rouge&quot;&gt;_my_tags&lt;/code&gt; folder with the name of your category, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;cool-stuff.md&lt;/code&gt;. This file needs to look like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;---
+slug: cool-stuff
+name: Cool Stuff
+description: &amp;gt;
+             This is an awesome description of my cool stuff tag which will be display underneath the title of this tag's page.
+---
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;slug&lt;/code&gt; is a mandatory field and defines tag’s slug, accessible at &lt;code class=&quot;highlighter-rouge&quot;&gt;yourblog.com/tag/dactl/&lt;/code&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; instead of spaces here.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; is a mandatory field and defines tag’s name, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;Cool Stuff&lt;/code&gt;.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; is an optional field, it’s visible on tag’s page.&lt;br /&gt;
+Click &lt;a href=&quot;/dactl/tag/dactl&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;/dactl/tag/howto&quot;&gt;here&lt;/a&gt; to see the difference.&lt;/p&gt;
+
+&lt;h2 id=&quot;optional&quot;&gt;Optional&lt;/h2&gt;
+&lt;p&gt;You can configure the Archive page to show ‘Tag box’ underneath the search box - this box will contain all of your blog’s tags with links to them.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/tags-in-dactyl</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/tags-in-dactyl</guid>
+        
+        <category>dactl</category>
+        
+        <category>howto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Post excerpts and leading paragraphs</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;By default, dactl’s blog layout displays post excerpts which are leading paragraphs as well. This requires some manual work on your part when writing a post but don’t worry - it’s really easy. Read on for more info.&lt;/p&gt;
+
+&lt;h2 id=&quot;post-excerpts&quot;&gt;Post excerpts&lt;/h2&gt;
+&lt;p&gt;First, let’s see how this and the above paragraph looks like in markdown:
+&amp;lt;!–-break-–&amp;gt;&lt;/p&gt;
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;By default, dactl's blog layout displays post excerpts which are leading paragraphs as well. This requires some manual work on your part when writing a post but don't worry - it's really easy. Read on for more info.
+{: .lead}
+
+&lt;span class=&quot;gu&quot;&gt;## Post excerpts&lt;/span&gt;
+First, let's see how this and the above paragraph looks like in markdown:
+&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;!–-break-–&amp;gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see above there are two things which are visible only in the post’s markdown version. You won’t see them here because they got processed by Jekyll and ‘thrown out’ while generating html version of this post.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.lead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; inserted on a new line after a paragraphtells Jekyll’s markdown processor (dactl uses &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;kramdown&lt;/a&gt;) to add class &lt;code class=&quot;highlighter-rouge&quot;&gt;.lead&lt;/code&gt; to the above &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag which results in a leading paragraph.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--break--&amp;gt;&lt;/code&gt;, inserted on a new line after &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.lead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;, tells Jekyll that it should &lt;a href=&quot;https://media.giphy.com/media/l46CxpYSFoFtN11ug/giphy.gif&quot;&gt;‘break’&lt;/a&gt; the post content at this point, so everything above it will become a post excerpt.&lt;/p&gt;
+
+&lt;p class=&quot;notice-alert&quot;&gt;The order is important here - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--break--&amp;gt;&lt;/code&gt; comes &lt;strong&gt;after&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.lead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; and because of that the leading paragraph/ post excerpt has it’s font enlarged both on blog and post pages.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/post-excerpts-lead-paragraphs</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/post-excerpts-lead-paragraphs</guid>
+        
+        <category>dactl</category>
+        
+        <category>howto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Footnotes</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;dactl uses &lt;a href=&quot;https://github.com/philgruneich/barefoot&quot;&gt;Barefoot&lt;/a&gt; plugin to create nice looking inline footnotes from those generated by &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;kramdown&lt;/a&gt;, daktl’s markdown processor.
+Read on for more information about how to add footnotes to your posts and how to enable/disable Barefoot plugin.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-barefootjs&quot;&gt;What is Barefoot.js&lt;/h2&gt;
+&lt;p&gt;I really like the look of inline-footnotes created by &lt;a href=&quot;https://github.com/lemonmade/bigfoot&quot;&gt;Bigfoot.js&lt;/a&gt; but it requires &lt;a href=&quot;http://jquery.com/&quot;&gt;jQuery&lt;/a&gt; and loading whole library just to have footnotes seems excessive.
+&amp;lt;!–-break-–&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;I found &lt;a href=&quot;https://github.com/philgruneich/barefoot&quot;&gt;Barefoot.js&lt;/a&gt; when looking for an alternative an it does exactly what it says:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Barefoot is a lightweight &lt;a href=&quot;https://github.com/lemonmade/bigfoot&quot;&gt;Bigfoot.js&lt;/a&gt; alternative written in vanilla Javascript to create beautiful inline footnotes.&lt;br /&gt;
+Barefoot grabs the common markup used for footnotes on the web, mostly generated by Markdown processors, and transform it into beautiful and meaningful footnotes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For dactl’s purposes I have modified Barefoot’s default stylesheet:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Adjusted the visuals a bit&lt;/li&gt;
+  &lt;li&gt;Footnote buttons show an icon, not a number&lt;/li&gt;
+  &lt;li&gt;Necessary changes to make it work with theme switcher&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-add-footnotes-to-your-posts&quot;&gt;How to add footnotes to your posts&lt;/h2&gt;
+&lt;p&gt;Adding footnotes to your posts is really easy.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
+First, you need to insert a numbered footnote mark in your post to define where it should show up - it looks like this:&lt;/p&gt;
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;Adding footnotes to your posts is really easy.&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;^1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then, to put some content in those those numbered footnotes, you need to define it at the bottom of your post, like this:&lt;/p&gt;
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;^1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;Here's&lt;/span&gt; one for example
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;how-to-turn-off-barefoot-plugin&quot;&gt;How to turn off Barefoot plugin&lt;/h2&gt;
+&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file and change value in blog.footnotes_inline from &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;.&lt;br /&gt;
+Restart your jekyll server and see the change in this post.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Here’s one for example &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 16 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/footnotes-in-dactl</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/footnotes-in-dactl</guid>
+        
+        <category>dactl</category>
+        
+        <category>howto</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Example content</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+
+&lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+&amp;lt;!–-break-–&amp;gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;notice&quot;&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+
+&lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; elements&lt;/h2&gt;
+
+&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; defines a long list of available inline tags, a complete list of which can be found on the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;**To bold text**&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;*To italicize text*&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; should be defined like this &lt;code class=&quot;highlighter-rouge&quot;&gt;*[HTML]: HyperText Markup Language&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Citations, like &lt;cite&gt;— Mark otto&lt;/cite&gt;, should use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code class=&quot;highlighter-rouge&quot;&gt;~~deleted~~&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
+
+&lt;h2 id=&quot;heading&quot;&gt;Heading&lt;/h2&gt;
+
+&lt;p&gt;Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code class=&quot;highlighter-rouge&quot;&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// arguments&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;return a + b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
+  &lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
+  &lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
+  &lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
+  &lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;HyperText Markup Language (&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;)&lt;/dt&gt;
+  &lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt;
+  &lt;dt&gt;Cascading Style Sheets (&lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt;)&lt;/dt&gt;
+  &lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt;
+  &lt;dt&gt;JavaScript (&lt;abbr title=&quot;JavaScript&quot;&gt;JS&lt;/abbr&gt;)&lt;/dt&gt;
+  &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;p class=&quot;notice-alert&quot;&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+
+&lt;p&gt;Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://placehold.it/1200x700&quot; alt=&quot;1200x700&quot; title=&quot;Large example image&quot; class=&quot;oversize&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/800x400&quot; alt=&quot;800x400&quot; title=&quot;Large example image&quot; class=&quot;lead&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/400x200&quot; alt=&quot;400x200&quot; title=&quot;Medium example image&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/200x200&quot; alt=&quot;200x200&quot; title=&quot;Small example image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Upvotes&lt;/th&gt;
+      &lt;th&gt;Downvotes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Charlie&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Totals&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;h2 id=&quot;math&quot;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+Nullam id &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;You can insert footnote marks using &lt;code class=&quot;highlighter-rouge&quot;&gt;[^1]&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;[^2]&lt;/code&gt;, etc and write the footnote text at the bottom of your file like this: &lt;code class=&quot;highlighter-rouge&quot;&gt;[^1]: You can also insert footnote marks...&lt;/code&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/dactl//posts/example-content</link>
+        <guid isPermaLink="true">http://localhost:4000/dactl//posts/example-content</guid>
+        
+        <category>jekyll</category>
+        
+        <category>dactl</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

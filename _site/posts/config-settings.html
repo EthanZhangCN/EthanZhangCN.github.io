@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Layout settings and more in _config.yml &#9642; dactl</title>
+<!--
+<meta name="description" content="All of the dactl’s configurations has to be set in _config.yml file. Read on for explanation of all of the features that you can toggle, including configuring the layout. I’ve split dactl’s _config.yml into two parts. First part should be configured by you, second contains important Jekyll &amp; build settings...">
+-->
+<meta name="description" content="this should contain a proper description
+">
+<meta name="keywords" content="jekyll, dactl, howto">
+<link rel="canonical" href="http://localhost:4000/posts/config-settings">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Layout settings and more in _config.yml" />
+<meta name="twitter:description" content="this should contain a proper description
+" />
+<meta name="twitter:image" content="http://localhost:4000" />
+<meta name="author" content="">
+<link rel="author" href="">
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Layout settings and more in _config.yml">
+<meta property="og:description" content="this should contain a proper description
+">
+<meta property="og:url" content="http://localhost:4000/posts/config-settings">
+<meta property="og:site_name" content="dactl">
+<link rel="stylesheet" href="/dactl/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/dactl/assets/css/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400italic,700,700italic">
+<style>
+    html {
+      font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+<link rel="stylesheet" href="/dactl/assets/css/bf.css">
+   <body>
+       <div class="wrapper" id="blep">
+          <header>
+   <div class="menu">
+     <div class="logo">
+        <a href="/dactl//">dactl</a>
+        <object type="image/svg+xml" data="/dactl/assets/img/dactl.svg" class="logosvg">Your browser does not support svg images</object>
+     </div>
+       <ul>
+           <li><a href="/dactl//about">about</a>
+           <li><a href="/dactl//archive">archive</a>
+       </ul>
+   </div>
+   <div class="social">
+     <ul>
+       <li>
+            <a href="https://youtube.com/youtube-user-name" target="_blank" class="smaller">
+              <span class="icon-youtube"></span>
+            </a>
+       <li>
+            <a href="https://stackoverflow.com/stackoverflow-user-name" target="_blank" class="smaller">
+              <span class="icon-stackoverflow"></span>
+            </a>
+       <li>
+            <a href="https://twitter.com/twitter-user-name" target="_blank" class="smaller">
+              <span class="icon-twitter"></span>
+            </a>
+       <li>
+            <a href="https://github.com/github-user-name" target="_blank" class="smaller">
+              <span class="icon-github"></span>
+            </a>
+       <li>
+            <a href="mailto:your@email.com" target="_blank">
+              <span class="icon-mail_outline"></span>
+            </a>
+       <li>
+            <a href="/dactl//feed.xml" target="_blank">
+                <span class="icon-rss_feed"></span>
+            </a>
+       <li>
+            <a href="#" onclick="switchTheme()" title="Switch theme?">
+              <span class="icon-invert_colors" id="theme-switcher"></span>
+            </a>
+     </ul>
+   </div>
+</header>
+<article class="post">
+<style>
+  .config-settings {
+    margin-bottom: 2em;
+  }
+  .config-settings::before {
+    background-image: url('https://source.unsplash.com/collection/582860/');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .config-settings::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,0,100,0.8);
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    z-index: -1;
+  }
+  .config-settings-container,
+  .config-settings-container::before,
+  .config-settings-container::after {
+    height: 25rem;
+  }
+  .config-settings-bleed-container,
+  .config-settings-bleed-container::before,
+  .config-settings-bleed-container::after {
+    height: 35rem;
+  }
+    @media (max-width: 48rem) {
+        .config-settings-container,
+        .config-settings-container::before,
+        .config-settings-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+ <div class="post-title-container
+  config-settings config-settings-bleed-container bleed-hero-container
+    ">
+    <!--Post hero image source-->
+   <div class="heading-container hero-heading hero-heading-post">
+     <h1>
+          Layout settings and more in _config.yml
+     </h1>
+     <div class="post-meta">
+        <span>20/03/2017</span>
+        <span>
+              <a href="/dactl/tag/jekyll">#jekyll</a>
+              <a href="/dactl/tag/dactl">#dactl</a>
+              <a href="/dactl/tag/howto">#howto</a>
+        </span>
+     </div>
+   </div>
+ </div>
+   <p class="lead">All of the dactl’s configurations has to be set in <code class="highlighter-rouge">_config.yml</code> file. Read on for explanation of all of the features that you can toggle, including configuring the layout.
+<p>I’ve split dactl’s <code class="highlighter-rouge">_config.yml</code> into two parts. First part should be configured by you, second contains important Jekyll &amp; build settings and you should leave it alone, unless you know what you are doing.
+<p>Let’s go through each line in the first, configurable part:
+<div class="language-yaml highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36</pre><td class="code"><pre><span class="c1"># Base blog settings</span>
+<span class="s">blog</span><span class="pi">:</span>
+  <span class="s">title</span>                      <span class="pi">:</span> <span class="s">dactl</span>
+  <span class="s">description</span>                <span class="pi">:</span> <span class="pi">&gt;</span>
+                               <span class="no">this should contain a proper description</span>
+<span class="c1"># Layout configuration</span>
+  <span class="s">logo_path</span>                  <span class="pi">:</span> <span class="s2">"</span><span class="s">assets/img/dactl.svg"</span> <span class="c1"># path to logo file</span>
+  <span class="s">search_path</span>                <span class="pi">:</span> <span class="c1"># "yourgitusername.github.io"</span>
+                               <span class="c1"># needed for searchbox in archive page</span>
+  <span class="s">hero_layout</span>                <span class="pi">:</span> <span class="s">true</span> <span class="c1"># turn on hero layout for blog and posts</span>
+  <span class="s">hero_placeholder</span>           <span class="pi">:</span> <span class="s2">"</span><span class="s">assets/img/generic_hero.jpg"</span> <span class="c1"># placeholder for hero</span>
+  <span class="s">excerpts</span>                   <span class="pi">:</span> <span class="s">true</span> <span class="c1"># show excerpts instead of full post content on blog page</span>
+  <span class="s">inline_footnotes</span>           <span class="pi">:</span> <span class="s">true</span> <span class="c1"># enable/disable barefoot inline footnotes</span>
+  <span class="s">titles_only</span>                <span class="pi">:</span> <span class="s">false</span> <span class="c1"># titles only on main blog page</span>
+
+<span class="c1"># Fonts</span>
+<span class="s">font</span>                         <span class="pi">:</span> <span class="s1">'</span><span class="s">"Rubik",</span><span class="nv"> </span><span class="s">-apple-system,</span><span class="nv"> </span><span class="s">BlinkMacSystemFont,</span><span class="nv"> </span><span class="s">"Helvetica</span><span class="nv"> </span><span class="s">Neue",</span><span class="nv"> </span><span class="s">sans-serif'</span>
+<span class="s">load_google_fonts</span>            <span class="pi">:</span> <span class="s1">'</span><span class="s">Rubik:400,400italic,700,700italic'</span>
+
+<span class="c1"># Author info</span>
+<span class="s">author</span><span class="pi">:</span>
+  <span class="s">fullname</span>                  <span class="pi">:</span> <span class="s">Your Name</span>
+  <span class="s">rss</span>                       <span class="pi">:</span> <span class="s">true</span> <span class="c1"># generate RSS feed and show it's icon in header</span>
+  <span class="s">mail</span>                      <span class="pi">:</span> <span class="s">your@email.com</span> <span class="c1"># change to your e-mail address</span>
+  <span class="s">twitter</span>                   <span class="pi">:</span> <span class="s">twitter-user-name</span>
+  <span class="s">github</span>                    <span class="pi">:</span> <span class="s">github-user-name</span>
+  <span class="s">youtube</span>                   <span class="pi">:</span> <span class="s">youtube-user-name</span>
+  <span class="s">stackoverflow</span>             <span class="pi">:</span> <span class="s">stackoverflow-user-name</span>
+  <span class="s">disqus</span>                    <span class="pi">:</span> <span class="s">dactl</span> <span class="c1"># your disqus site name</span>
+  <span class="s">google_analytics</span>          <span class="pi">:</span> <span class="c1"># 'UA-XXXXXXXX-X'</span>
+  <span class="s">photo</span>                     <span class="pi">:</span> <span class="s2">"</span><span class="s">uploads/me2.png"</span>
+  <span class="s">photo2x</span>                   <span class="pi">:</span> <span class="s2">"</span><span class="s">uploads/me.png"</span>
+
+<span class="s">baseurl</span>                      <span class="pi">:</span> <span class="s2">"</span><span class="s">/dactl/"</span> <span class="c1"># the subpath of your site, e.g. /blog/, set to '' in case of hosting on GitHub pages</span>
+                                  <span class="c1"># i.e. `http://&lt;username&gt;.github.io`</span>
+<span class="s">url</span>                          <span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site</span>
+</pre></table>
+</div>
+</div>
+<h2 id="base-blog-settings">Base blog settings</h2>
+<ul>
+ <li><code class="highlighter-rouge">title</code> - title of your blog, both in <code class="highlighter-rouge">&lt;title&gt;</code> tag and in the header.
+ <li><code class="highlighter-rouge">description</code> - descriptionof your blog, shown in the footer
+</ul>
+<h2 id="layout-settings">Layout settings</h2>
+<ul>
+ <li><code class="highlighter-rouge">logo_path</code> - Path to an .svg image used as logo
+ <li><code class="highlighter-rouge">search_path</code> - Path to your blog, needed for the DuckDuckGo’s searchbar found in Archive page.
+ <li><code class="highlighter-rouge">hero_layout</code> - true / false - Turn the hero image layout on or off. When turned off you don’t need to supply images and overlays in post’s YAML front matter and the layout gets slightly adjusted.
+ <li><code class="highlighter-rouge">hero_placeholder</code> - Path to an image which will be used as a placeholder when there is no hero set for post, optional.
+ <li><code class="highlighter-rouge">excerpts</code> - true or false - Turn post excerpts on or off. When set to <code class="highlighter-rouge">false</code> you will see full text content for each post on blog page.
+ <li><code class="highlighter-rouge">inline_footnotes</code> - true or false - When set to <code class="highlighter-rouge">false</code> you will turn off Barefoot.js inline footnotes.
+ <li><code class="highlighter-rouge">titles_only</code> - true or false - When set to true Jekyll will generate blog layout with post titles only. <code class="highlighter-rouge">hero_layout</code> and <code class="highlighter-rouge">excerpts</code> are overidden by <code class="highlighter-rouge">titles_only</code> when it’s set to <code class="highlighter-rouge">true</code>.
+</ul>
+<h2 id="fonts">Fonts</h2>
+<ul>
+ <li><code class="highlighter-rouge">font</code> - Name of the font family used for theme’s typography.
+ <li><code class="highlighter-rouge">load_google_fonts</code> - Choose what font family should be loaded, served by <a href="https://fonts.google.com">google fonts</a>.
+In order to change the font you need to supply it’s name and variants - font weight of 400 and 700 are required.
+</ul>
+<h2 id="author-info">Author info</h2>
+<ul>
+ <li><code class="highlighter-rouge">fullname</code> - Your name and surname or nick, used throughout the blog.
+ <li><code class="highlighter-rouge">rss</code> - true or false - Turn the RSS feeds on or off.
+ <li><code class="highlighter-rouge">mail</code> - Your e-mail address.
+ <li><code class="highlighter-rouge">twitter</code> - Your twitter username
+ <li><code class="highlighter-rouge">github</code> - Your Github username
+ <li><code class="highlighter-rouge">youtube</code> - Your YouTube username
+ <li><code class="highlighter-rouge">stackoverflow</code> - Your Stackoverflow username
+ <li><code class="highlighter-rouge">disqus</code> - Your Disqus site name.
+ <li><code class="highlighter-rouge">photo</code> - Avatar or photo of you, used on About page.
+ <li><code class="highlighter-rouge">photo2x</code> - Same as above but in higher resolution.
+</ul>
+<h2 id="google-analytics">Google Analytics</h2>
+<ul>
+ <li><code class="highlighter-rouge">google_analytics</code> - Supply your Google Analytics ID here, if you want to use it.
+ <li><code class="highlighter-rouge">baseurl</code> - Subpath of your blog, e.g. <code class="highlighter-rouge">/blog</code>, leave it empty in case of hosting on Github pages - <code class="highlighter-rouge">yourusername.github.io</code>
+</ul>
+</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'dactl';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<aside class="related">
+<h2>Related posts</h2>
+<ul class="related-posts">
+   <li>
+    <a href="/dactl//posts/welcome-to-dactl">
+        <span>Welcome to dactl!</span>
+        <small>22/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/notices">
+        <span>Notice blocks</span>
+        <small>20/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/yaml-frontmatter">
+        <span>YAML front matter in posts</span>
+        <small>19/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/tags-in-dactyl">
+        <span>Tags in dactl</span>
+        <small>18/03</small>
+    </a>
+</aside>
+           <footer>
+    <span>this should contain a proper description
+</span>
+    <span>written by Your Name</span>
+</footer>
+       </div>
+<script type="text/javascript" src="/dactl/assets/js/theme.js"></script>
+<script type="text/javascript" src="/dactl/assets/js/barefoot.js"></script>
+    

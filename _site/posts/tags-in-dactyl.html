@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Tags in dactl &#9642; dactl</title>
+<!--
+<meta name="description" content="Tags are built using Jekyll’s native categories functionality and you need to add them manually as files before using them in posts. Read on to learn how.
+How to add a new tag
+Please make sure to do the following for each tag:
+">
+-->
+<meta name="description" content="this should contain a proper description
+">
+<meta name="keywords" content="dactl, howto">
+<link rel="canonical" href="http://localhost:4000/posts/tags-in-dactyl">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Tags in dactl" />
+<meta name="twitter:description" content="this should contain a proper description
+" />
+<meta name="twitter:image" content="http://localhost:4000" />
+<meta name="author" content="">
+<link rel="author" href="">
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tags in dactl">
+<meta property="og:description" content="this should contain a proper description
+">
+<meta property="og:url" content="http://localhost:4000/posts/tags-in-dactyl">
+<meta property="og:site_name" content="dactl">
+<link rel="stylesheet" href="/dactl/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/dactl/assets/css/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400italic,700,700italic">
+<style>
+    html {
+      font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+<link rel="stylesheet" href="/dactl/assets/css/bf.css">
+   <body>
+       <div class="wrapper" id="blep">
+          <header>
+   <div class="menu">
+     <div class="logo">
+        <a href="/dactl//">dactl</a>
+        <object type="image/svg+xml" data="/dactl/assets/img/dactl.svg" class="logosvg">Your browser does not support svg images</object>
+     </div>
+       <ul>
+           <li><a href="/dactl//about">about</a>
+           <li><a href="/dactl//archive">archive</a>
+       </ul>
+   </div>
+   <div class="social">
+     <ul>
+       <li>
+            <a href="https://youtube.com/youtube-user-name" target="_blank" class="smaller">
+              <span class="icon-youtube"></span>
+            </a>
+       <li>
+            <a href="https://stackoverflow.com/stackoverflow-user-name" target="_blank" class="smaller">
+              <span class="icon-stackoverflow"></span>
+            </a>
+       <li>
+            <a href="https://twitter.com/twitter-user-name" target="_blank" class="smaller">
+              <span class="icon-twitter"></span>
+            </a>
+       <li>
+            <a href="https://github.com/github-user-name" target="_blank" class="smaller">
+              <span class="icon-github"></span>
+            </a>
+       <li>
+            <a href="mailto:your@email.com" target="_blank">
+              <span class="icon-mail_outline"></span>
+            </a>
+       <li>
+            <a href="/dactl//feed.xml" target="_blank">
+                <span class="icon-rss_feed"></span>
+            </a>
+       <li>
+            <a href="#" onclick="switchTheme()" title="Switch theme?">
+              <span class="icon-invert_colors" id="theme-switcher"></span>
+            </a>
+     </ul>
+   </div>
+</header>
+<article class="post">
+<style>
+  .tags-in-dactyl {
+    margin-bottom: 2em;
+  }
+  .tags-in-dactyl::before {
+    background-image: url('https://source.unsplash.com/collection/427433/');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .tags-in-dactyl::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(100,255,0,0.8);
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    z-index: -1;
+  }
+  .tags-in-dactyl-container,
+  .tags-in-dactyl-container::before,
+  .tags-in-dactyl-container::after {
+    height: 25rem;
+  }
+  .tags-in-dactyl-bleed-container,
+  .tags-in-dactyl-bleed-container::before,
+  .tags-in-dactyl-bleed-container::after {
+    height: 35rem;
+  }
+    @media (max-width: 48rem) {
+        .tags-in-dactyl-container,
+        .tags-in-dactyl-container::before,
+        .tags-in-dactyl-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+ <div class="post-title-container
+  tags-in-dactyl tags-in-dactyl-bleed-container bleed-hero-container
+    ">
+    <!--Post hero image source-->
+   <div class="heading-container hero-heading hero-heading-post">
+     <h1>
+          Tags in dactl
+     </h1>
+     <div class="post-meta">
+        <span>18/03/2017</span>
+        <span>
+              <a href="/dactl/tag/dactl">#dactl</a>
+              <a href="/dactl/tag/howto">#howto</a>
+        </span>
+     </div>
+   </div>
+ </div>
+   <p class="lead">Tags are built using Jekyll’s native categories functionality and you need to add them manually as files before using them in posts. Read on to learn how.
+<h2 id="how-to-add-a-new-tag">How to add a new tag</h2>
+<p>Please make sure to do the following for each tag:
+<p>Create a .md file within <code class="highlighter-rouge">_my_tags</code> folder with the name of your category, e.g. <code class="highlighter-rouge">cool-stuff.md</code>. This file needs to look like this:
+<div class="highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre><td class="code"><pre>---
+slug: cool-stuff
+name: Cool Stuff
+description: &gt;
+             This is an awesome description of my cool stuff tag which will be display underneath the title of this tag's page.
+---
+</pre></table>
+</div>
+</div>
+<p><code class="highlighter-rouge">slug</code> is a mandatory field and defines tag’s slug, accessible at <code class="highlighter-rouge">yourblog.com/tag/dactl/</code>, use <code class="highlighter-rouge">-</code> instead of spaces here.<br />
+<code class="highlighter-rouge">name</code> is a mandatory field and defines tag’s name, e.g. <code class="highlighter-rouge">Cool Stuff</code>.<br />
+<code class="highlighter-rouge">description</code> is an optional field, it’s visible on tag’s page.<br />
+Click <a href="/dactl/tag/dactl">here</a> and <a href="/dactl/tag/howto">here</a> to see the difference.
+<h2 id="optional">Optional</h2>
+<p>You can configure the Archive page to show ‘Tag box’ underneath the search box - this box will contain all of your blog’s tags with links to them.
+</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'dactl';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<aside class="related">
+<h2>Related posts</h2>
+<ul class="related-posts">
+   <li>
+    <a href="/dactl//posts/notices">
+        <span>Notice blocks</span>
+        <small>20/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/config-settings">
+        <span>Layout settings and more in _config.yml</span>
+        <small>20/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/yaml-frontmatter">
+        <span>YAML front matter in posts</span>
+        <small>19/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/post-excerpts-lead-paragraphs">
+        <span>Post excerpts and leading paragraphs</span>
+        <small>17/03</small>
+    </a>
+</aside>
+           <footer>
+    <span>this should contain a proper description
+</span>
+    <span>written by Your Name</span>
+</footer>
+       </div>
+<script type="text/javascript" src="/dactl/assets/js/theme.js"></script>
+<script type="text/javascript" src="/dactl/assets/js/barefoot.js"></script>
+    

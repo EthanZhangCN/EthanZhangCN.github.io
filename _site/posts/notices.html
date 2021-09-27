@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Notice blocks &#9642; dactl</title>
+<!--
+<meta name="description" content="By default dactl has a couple of special classes which will turn a paragraph into a notice block when added to it. Read on for information on how to use it. How to create a notice block Creating notices from your paragraphs works the same way as creating leading post...">
+-->
+<meta name="description" content="this should contain a proper description
+">
+<meta name="keywords" content="dactl, howto">
+<link rel="canonical" href="http://localhost:4000/posts/notices">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Notice blocks" />
+<meta name="twitter:description" content="this should contain a proper description
+" />
+<meta name="twitter:image" content="http://localhost:4000" />
+<meta name="author" content="">
+<link rel="author" href="">
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notice blocks">
+<meta property="og:description" content="this should contain a proper description
+">
+<meta property="og:url" content="http://localhost:4000/posts/notices">
+<meta property="og:site_name" content="dactl">
+<link rel="stylesheet" href="/dactl/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/dactl/assets/css/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400italic,700,700italic">
+<style>
+    html {
+      font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+<link rel="stylesheet" href="/dactl/assets/css/bf.css">
+   <body>
+       <div class="wrapper" id="blep">
+          <header>
+   <div class="menu">
+     <div class="logo">
+        <a href="/dactl//">dactl</a>
+        <object type="image/svg+xml" data="/dactl/assets/img/dactl.svg" class="logosvg">Your browser does not support svg images</object>
+     </div>
+       <ul>
+           <li><a href="/dactl//about">about</a>
+           <li><a href="/dactl//archive">archive</a>
+       </ul>
+   </div>
+   <div class="social">
+     <ul>
+       <li>
+            <a href="https://youtube.com/youtube-user-name" target="_blank" class="smaller">
+              <span class="icon-youtube"></span>
+            </a>
+       <li>
+            <a href="https://stackoverflow.com/stackoverflow-user-name" target="_blank" class="smaller">
+              <span class="icon-stackoverflow"></span>
+            </a>
+       <li>
+            <a href="https://twitter.com/twitter-user-name" target="_blank" class="smaller">
+              <span class="icon-twitter"></span>
+            </a>
+       <li>
+            <a href="https://github.com/github-user-name" target="_blank" class="smaller">
+              <span class="icon-github"></span>
+            </a>
+       <li>
+            <a href="mailto:your@email.com" target="_blank">
+              <span class="icon-mail_outline"></span>
+            </a>
+       <li>
+            <a href="/dactl//feed.xml" target="_blank">
+                <span class="icon-rss_feed"></span>
+            </a>
+       <li>
+            <a href="#" onclick="switchTheme()" title="Switch theme?">
+              <span class="icon-invert_colors" id="theme-switcher"></span>
+            </a>
+     </ul>
+   </div>
+</header>
+<article class="post">
+<style>
+  .notices {
+    margin-bottom: 2em;
+  }
+  .notices::before {
+    background-image: url('https://source.unsplash.com/collection/345758/');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .notices::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(100,0,255,0.8);
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    z-index: -1;
+  }
+  .notices-container,
+  .notices-container::before,
+  .notices-container::after {
+    height: 25rem;
+  }
+  .notices-bleed-container,
+  .notices-bleed-container::before,
+  .notices-bleed-container::after {
+    height: 35rem;
+  }
+    @media (max-width: 48rem) {
+        .notices-container,
+        .notices-container::before,
+        .notices-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+ <div class="post-title-container
+  notices notices-bleed-container bleed-hero-container
+    ">
+    <!--Post hero image source-->
+   <div class="heading-container hero-heading hero-heading-post">
+     <h1>
+          Notice blocks
+     </h1>
+     <div class="post-meta">
+        <span>20/03/2017</span>
+        <span>
+              <a href="/dactl/tag/dactl">#dactl</a>
+              <a href="/dactl/tag/howto">#howto</a>
+        </span>
+     </div>
+   </div>
+ </div>
+   <p class="lead">By default dactl has a couple of special classes which will turn a paragraph into a notice block when added to it. Read on for information on how to use it.
+<h2 id="how-to-create-a-notice-block">How to create a notice block</h2>
+<p>Creating notices from your paragraphs works the same way as creating <a href="LINKILYNKI">leading post paragraphs</a>.<br />
+You need to add a correct class <strong>after</strong> the paragraph:
+<div class="highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre><td class="code"><pre>Sea otters [hold each other’s paws](https://www.youtube.com/watch?v=eTvX-CkfqRo) when they sleep so they don’t drift apart.  
+That is a fact, look it up on Wikipedia if you don't believe me.
+{: .notice}
+</pre></table>
+</div>
+</div>
+<h2 id="available-options">Available options</h2>
+<h3 id="regular-notice-block">Regular notice block</h3>
+<p><code class="highlighter-rouge"><span class="p">{</span><span class="err">:</span><span class="w"> </span><span class="err">.notice</span><span class="p">}</span></code>
+<p class="notice">Sea otters <a href="https://www.youtube.com/watch?v=eTvX-CkfqRo">hold each other’s paws</a> when they sleep so they don’t drift apart.<br />
+That is a fact, look it up on Wikipedia if you don’t believe me.
+<h3 id="alert-notice-block">Alert notice block</h3>
+<p><code class="highlighter-rouge"><span class="p">{</span><span class="err">:</span><span class="w"> </span><span class="err">.notice-alert</span><span class="p">}</span></code>
+<p class="notice-alert">If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.
+<h3 id="success-notice-block">Success notice block</h3>
+<p><code class="highlighter-rouge"><span class="p">{</span><span class="err">:</span><span class="w"> </span><span class="err">.notice-success</span><span class="p">}</span></code>
+<p class="notice-success">If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.
+<h2 id="multi-paragraph-notice-blocks">Multi-paragraph notice blocks</h2>
+<p>The easiest solution I found to wrapping more than paragraph into a notice is just inserting it into a markdown-enabled <code class="highlighter-rouge">div</code> tag, like this:
+<div class="language-html highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.
+
+A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.
+<span class="nt">&lt;/div&gt;</span>
+</pre></table>
+</div>
+</div>
+<p>Which, when processed by kramdown, shows up like this:
+<div class="notice">
+ <p>If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.
+ <p>A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.
+</div>
+</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'dactl';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<aside class="related">
+<h2>Related posts</h2>
+<ul class="related-posts">
+   <li>
+    <a href="/dactl//posts/config-settings">
+        <span>Layout settings and more in _config.yml</span>
+        <small>20/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/yaml-frontmatter">
+        <span>YAML front matter in posts</span>
+        <small>19/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/tags-in-dactyl">
+        <span>Tags in dactl</span>
+        <small>18/03</small>
+    </a>
+   <li>
+    <a href="/dactl//posts/post-excerpts-lead-paragraphs">
+        <span>Post excerpts and leading paragraphs</span>
+        <small>17/03</small>
+    </a>
+</aside>
+           <footer>
+    <span>this should contain a proper description
+</span>
+    <span>written by Your Name</span>
+</footer>
+       </div>
+<script type="text/javascript" src="/dactl/assets/js/theme.js"></script>
+<script type="text/javascript" src="/dactl/assets/js/barefoot.js"></script>
+    
