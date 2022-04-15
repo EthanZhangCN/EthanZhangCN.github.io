@@ -1,5 +1,5 @@
 # Base blog settings
-baseurl                      : "" # the subpath of your site,                         # e.g. /blog/
+baseurl                      : '' # the subpath of your site,                         # e.g. /blog/
                               # set to '' in case of hosting on GitHub
                               # EthanZhangCN.github.io
 url                          : "http://EthanZhangCN.github.io" # the base hostname & protocol for your site
