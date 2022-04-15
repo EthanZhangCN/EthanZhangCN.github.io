@@ -1,3 +1,18 @@
+# 1 Start Server locally
+```
+bundle exec jekyll serve
+```
+view page is
+```
+http://127.0.0.1:4000/
+```
+# 2 Add post
+add files in folder "/_posts/"
+# 3 git url
+```
+EthanZhangCN.github.io
+```
+
 # dactl
 dactl is a fast, modern and configurable [Jekyll](http://jekyllrb.com/) theme with some tricks up it's sleeve. It has a live theme switcher and it's main blog layout display prominent hero images for posts with colored overlays and nice animations.
 
