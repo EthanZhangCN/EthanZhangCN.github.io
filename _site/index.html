@@ -206,6 +206,80 @@
           <a href="/posts/welcome-to-dactl" role="button">Read more</a>
        <div>
 </article>
+ <hr>
+<article class="blog">
+<style>
+  .example-content {
+    margin-bottom: 2em;
+  }
+  .example-content::before {
+    background-image: url('https://source.unsplash.com/collection/145103/');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .example-content::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(100,255,0,0.8);
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    z-index: -1;
+  }
+  .example-content-container,
+  .example-content-container::before,
+  .example-content-container::after {
+    height: 25rem;
+  }
+  .example-content-bleed-container,
+  .example-content-bleed-container::before,
+  .example-content-bleed-container::after {
+    height: 35rem;
+  }
+    @media (max-width: 48rem) {
+        .example-content-container,
+        .example-content-container::before,
+        .example-content-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+ <div class="
+    post-title-container
+        example-content example-content-container hero-hov
+  ">
+   <div class="heading-container hero-heading hero-heading-blog">
+     <h1>
+          <a href="/posts/example-content" title="Example content">Example content</a>
+     </h1>
+     <div class="
+        post-meta
+      ">
+        <span>20/01/2017</span>
+        <span>
+              <a href="/tag/jekyll">#jekyll</a>
+              <a href="/tag/dactl">#dactl</a>
+        </span>
+     </div>
+   </div>
+ </div>
+     <p class="lead">Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+       <div class="readmore">
+          <a href="/posts/example-content" role="button">Read more</a>
+       <div>
+</article>
 <nav class="pagination" role="navigation">
 <hr/>
  <ul>
