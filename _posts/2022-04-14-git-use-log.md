@@ -5,21 +5,23 @@ title:  "git use log"
 #   - dactl
 #   - jekyll
 hero: https://source.unsplash.com/collection/430471/
-overlay: blue
+overlay: green
 published: true
 ---
 
-##BFG tool to simplify .git repo
-download page
-```
-https://rtyley.github.io/bfg-repo-cleaner/
-```
-usage:
-```
-java -jar bfg-1.14.0.jar -b 2M mmagnn/.git
-```
-if protected commits append the command
---no-blob-protection
-```
+{: .lead}
+<!–-break-–>
+## BFG tool to simplify .git repo
+#### download page
+
+>https://rtyley.github.io/bfg-repo-cleaner/
+
+#### usage:
+
+>java -jar bfg-1.14.0.jar -b 2M mmagnn/.git
+
+#### if protected commits append the command
+>--no-blob-protection
+~~~js
 java -jar bfg-1.14.0.jar -b 2M mmagnn/.git --no-blob-protection
-```
+~~~
