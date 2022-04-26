@@ -26,6 +26,27 @@ published: true
 java -jar bfg-1.14.0.jar -b 2M mmagnn/.git --no-blob-protection
 ~~~
 
+## git large file manage
+~~~
+>查找大于100M的文件
+ find . -type f -size +100M
+>标记为大文件管理
+git lfs track "./xxx.zip"
+>追踪大文件管理记录
+git add .gitattributes
+提交
+>git commit -m "添加了大文件"
+>git push 
+
+>查看哪些三lfs管理
+git lfs ls-files
+
+~~~
+
+
+
+
+
 *[HTML]: HyperText Markup Language
 *[CSS]: Cascading Style Sheets
 *[JS]: JavaScript
