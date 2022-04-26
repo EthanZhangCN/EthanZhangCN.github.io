@@ -151,6 +151,35 @@
 </div>
  </div>
 </blockquote>
+<h2 id="git-large-file-manage">git large file manage</h2>
+<div class="highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre><td class="code"><pre>&gt;查找大于100M的文件
+ find . -type f -size +100M
+&gt;标记为大文件管理
+git lfs track "./xxx.zip"
+&gt;追踪大文件管理记录
+git add .gitattributes
+提交
+&gt;git commit -m "添加了大文件"
+&gt;git push 
+
+&gt;查看哪些三lfs管理
+git lfs ls-files
+
+</pre></table>
+</div>
+</div>
 </article>
 <aside class="related">
 <h2>Related posts</h2>
