@@ -10,7 +10,7 @@ http://127.0.0.1:4000/
 add files in folder "/_posts/"
 # 3 git url
 
-[EthanZhangCN.github.io](http:\\EthanZhangCN.github.io)
+[EthanZhangCN.github.io](http://EthanZhangCN.github.io)
 
 
 # dactl
