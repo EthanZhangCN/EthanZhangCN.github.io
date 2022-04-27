@@ -26,9 +26,7 @@ published: true
 
 >--no-blob-protection
 
-~~~js
-java -jar bfg-1.14.0.jar -b 2M mmagnn/.git --no-blob-protection
-~~~
+>java -jar bfg-1.14.0.jar -b 2M mmagnn/.git --no-blob-protection
 
 ## git large file manage
 
