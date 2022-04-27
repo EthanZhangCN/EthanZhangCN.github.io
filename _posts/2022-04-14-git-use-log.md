@@ -38,12 +38,12 @@ git add .gitattributes
 >git commit -m "添加了大文件"
 >git push 
 
->查看哪些三lfs管理
-git lfs ls-files
+
 
 ~~~
 
-
+>查看哪些是lfs管理
+git lfs ls-files
 
 
 

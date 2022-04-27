@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Apr 2022 16:01:50 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Apr 2022 16:01:50 +0800</lastBuildDate>
+    <pubDate>Wed, 27 Apr 2022 09:26:22 +0800</pubDate>
+    <lastBuildDate>Wed, 27 Apr 2022 09:26:22 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -47,8 +47,7 @@
 9
 10
 11
-12
-13&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;gt;查找大于100M的文件
+12&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;gt;查找大于100M的文件
  find . -type f -size +100M
 &amp;gt;标记为大文件管理
 git lfs track &quot;./xxx.zip&quot;
@@ -58,12 +57,16 @@ git add .gitattributes
 &amp;gt;git commit -m &quot;添加了大文件&quot;
 &amp;gt;git push 
 
-&amp;gt;查看哪些三lfs管理
-git lfs ls-files
+
 
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;查看哪些是lfs管理
+git lfs ls-files&lt;/p&gt;
+&lt;/blockquote&gt;
 
 </description>
         <pubDate>Thu, 14 Apr 2022 00:00:00 +0800</pubDate>
