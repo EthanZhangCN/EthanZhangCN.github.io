@@ -1,18 +1,13 @@
 ---
 layout: post
-title:  "git use log"
-tags:
-   - dactl
-   - jekyll
-description: >
-	git use log
-hero: https://source.unsplash.com/collection/430471/
-overlay: green
-published: true
----
+title: git use log
+subtitle: --
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: true
 
-{: .lead}
-<!–-break-–>
+---
 ## BFG tool to simplify .git repo
 #### download page
 

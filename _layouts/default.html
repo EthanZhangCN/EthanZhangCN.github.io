@@ -1,23 +1,25 @@
 ---
-layout: compress
+layout: base
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        {% include main/head.html %}
-    </head>
+<div class="intro-header"></div>
 
-    <body>
-        <div class="wrapper" id="blep">
-            {% include main/header.html %}
+<div role="main" class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  {% if page.before-content %}
+    <div class="before-content">
+      {% for file in page.before-content %}
+        {% include {{ file }} %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
-            {{ content }}
+  {{ content }}
 
-            {% include main/footer.html %}
-        </div>
-
-        {% include externals/scripting.html %}
-        {% include externals/google_analytics.html %}
-    </body>
-</html>
+  {% if page.after-content %}
+    <div class="after-content">
+      {% for file in page.after-content %}
+        {% include {{ file }} %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
