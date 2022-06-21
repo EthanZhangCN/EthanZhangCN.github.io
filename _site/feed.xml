@@ -15,26 +15,7 @@
         <title>NeRF中体素渲染方程推导</title>
         <description>
           
-          光线模型
-Optical Models for Direct Volume Rendering
-
-1 光线吸收模型
-假设一个截面积为$E$ 厚度为$\Delta_s$的圆柱体介质，由N个大小均等半径为$r$的小球组成，小球投影面积$A=\pi r^2$，小球占总体积密度为$\rho$，则有$NA = \rho AE \Delta_s$，假设所有的光线打到小球上都被吸收没有反射与折射，光线被圆柱截面阻挡率（不透明度）为$\frac{NA}{E}= \rho A \Delta_s$。
-
-
-https://github.com/EthanZhangCN/EthanZhangCN.github.io/blob/main/_posts/2020-02-28-test-markdown.md
-
-当$\Delta_s$无限小时，可以认为小球没有重叠，就可以得到微分方程 , 光通过截面$ds$被吸收率：
-
-$\frac{dI}{ds}=-\rho(s)AI(s)=- \tau(s)I(s)     ---------（1）$ 
-
-解以上微分方程（1），具体参考“一阶线性非齐次微分方程”，可以得到：
-$I(s) = I_0 e^{(-\int_0^s{\tau(t)dt})}--------------(2)$ 
-
-方程（2）表明光线穿透介质厚度为$s$时的光强度，当$s$为$0$时, 即未被介质吸收, 光强为初始光强$I_0$
-
-2光线发射模型
-
+          光线模型 Optical Models for Direct Volume Rendering 1 光线纯吸收模型 假设一个截面积为$E$ 厚度为$\Delta_s$的圆柱体介质，由N个大小均等半径为$r$的小球颗粒组成，小球颗粒投影面积$A=\pi r^2$，单位体积的颗粒数量为$\rho$，则有$NA = \rho AE \Delta_s$，假设所有的光线打到小球颗粒上都被吸收没有反射与折射，光线在圆柱截面单位面积阻挡率为（不透明度）$\frac{NA}{E}= \rho A \Delta_s$。 当$\Delta_s$无限小时，可以认为小球颗粒没有重叠，沿圆柱厚度s积分，就可以得到微分方程 , 光通过截面$ds$被吸收量： $\frac{dI}{ds}=-\rho(s)AI(s)=- \tau(s)I(s) ---------（1）$ 含义：光线穿过厚度为$ds$截面,穿过该截面后的光强$dI$，穿过该截面前的光强$I(s)$，颗粒在该截面的投影面积$\rho(s)A$, 解以上微分方程（1），具体参考“一阶线性非齐次微分方程”，可以得到： $I(s) = I_0 e^{(-\int_0^s{\tau(t)dt})}--------------(2)$ 方程（2）表明光线穿透介质厚度为$s$时的光强度，当$s$为$0$时, 即未被介质吸收, 光强为初始光强$I_0$ 2 光线纯发射模型 假设上述模型中的小球完全透明，不吸收光，但是可以反射光。单位投影面积上发光强度为$C$，则圆柱体截面总发光强度为$NCA = \rho CAE \Delta_s$，圆柱截面单位面积发光强度为$\frac{NCA}{E}= \rho CA \Delta_s$。当$\Delta_s$无限小时，可以得到微分方程： $\frac{dI}{ds}=\rho(s)AC(s)=C(s) \tau(s) =g(s) ---------（3）$ 含义：在厚度为$ds$的截面上的发光量为$dI$, 该截面上发光颗粒的面积$\rho(s)A$，单位颗粒面积发光强度$C(s)$...
         </description>
         <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/2022-06-20-NeRF/</link>
