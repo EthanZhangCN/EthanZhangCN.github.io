@@ -1,10 +1,10 @@
 ---
 layout: post
-title: git use log
+title: git use logs
 subtitle: --
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [daily]
 comments: true
 
 ---

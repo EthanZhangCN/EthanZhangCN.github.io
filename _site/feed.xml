@@ -12,7 +12,37 @@
     
     
       <item>
-        <title>git use log</title>
+        <title>NeRF中体素渲染方程推导</title>
+        <description>
+          
+          光线模型
+Optical Models for Direct Volume Rendering
+
+1 光线吸收模型
+假设一个截面积为$E$ 厚度为$\Delta_s$的圆柱体介质，由N个大小均等半径为$r$的小球组成，小球投影面积$A=\pi r^2$，小球占总体积密度为$\rho$，则有$NA = \rho AE \Delta_s$，假设所有的光线打到小球上都被吸收没有反射与折射，光线被圆柱截面阻挡率（不透明度）为$\frac{NA}{E}= \rho A \Delta_s$。
+
+
+https://github.com/EthanZhangCN/EthanZhangCN.github.io/blob/main/_posts/2020-02-28-test-markdown.md
+
+当$\Delta_s$无限小时，可以认为小球没有重叠，就可以得到微分方程 , 光通过截面$ds$被吸收率：
+
+$\frac{dI}{ds}=-\rho(s)AI(s)=- \tau(s)I(s)     ---------（1）$ 
+
+解以上微分方程（1），具体参考“一阶线性非齐次微分方程”，可以得到：
+$I(s) = I_0 e^{(-\int_0^s{\tau(t)dt})}--------------(2)$ 
+
+方程（2）表明光线穿透介质厚度为$s$时的光强度，当$s$为$0$时, 即未被介质吸收, 光强为初始光强$I_0$
+
+2光线发射模型
+
+        </description>
+        <pubDate>Mon, 20 Jun 2022 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2022-06-20-NeRF/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-06-20-NeRF/</guid>
+      </item>
+    
+      <item>
+        <title>git use logs</title>
         <description>
           -- - 
           BFG tool to simplify .git repo download page https://rtyley.github.io/bfg-repo-cleaner/ usage: java -jar bfg-1.14.0.jar -b 2M mmagnn/.git if protected commits append the command –no-blob-protection java -jar bfg-1.14.0.jar -b 2M mmagnn/.git –no-blob-protection git large file manage &amp;gt;查找大于100M的文件 find . -type f -size +100M &amp;gt;标记为大文件管理 git lfs track &quot;./xxx.zip&quot; &amp;gt;追踪大文件管理记录 git add .gitattributes...
@@ -20,28 +50,6 @@
         <pubDate>Thu, 14 Apr 2022 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/2022-04-14-git-use-log/</link>
         <guid isPermaLink="true">http://localhost:4000/2022-04-14-git-use-log/</guid>
-      </item>
-    
-      <item>
-        <title>Sample blog post</title>
-        <description>
-          Each post also has a subtitle - 
-          This is a demo post to show you how to write blog posts with markdown. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a secondary...
-        </description>
-        <pubDate>Fri, 28 Feb 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2020-02-28-test-markdown/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-02-28-test-markdown/</guid>
-      </item>
-    
-      <item>
-        <title>Flake it till you make it</title>
-        <description>
-          Excerpt from Soulshaping by Jeff Brown - 
-          Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
-        </description>
-        <pubDate>Wed, 26 Feb 2020 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020-02-26-flake-it-till-you-make-it/</guid>
       </item>
     
   </channel>
