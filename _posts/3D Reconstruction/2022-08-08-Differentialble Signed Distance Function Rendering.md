@@ -107,6 +107,7 @@ $$=\int_{S^2}\partial_\pi [f(\tau(\omega,\pi),\pi)||D\tau_{\omega,\pi}(s) \times
 > $s,t$ 是单位球体在$\omega$处的正交切向量  
 > $D\tau_{\omega,\pi}$ 是$\tau$关于向量$\omega$的微分  
 变换后的切向量的叉积范数考虑了积分域中的失真，类似于环境空间中变量变化的雅可比行列式  
+
 &emsp;&emsp;
 构建重新参数化:  使用此方法的核心技巧就是构建一个合适的重新参数化$\tau$.Bangaru等人将其要求公式化为：
 对于原始被积函数的不连续集上的任意方向$\omega_b$下的$\tau$都满足$\partial_\pi\tau(\omega_b,\pi)=\partial_\pi\omega_b$. 换言之,微分重参数应该导致微分运动,该运动与单位球体上的不连续运动完美匹配.注意，$\partial_\pi\tau(\omega_b,\pi)$和$\partial_\pi\omega_b$都是位于单位球体的切线空间中的向量.除此之外,还需要$\partial_\pi\tau(\omega_b,\pi)$其本身是连续的,以使重新参数化有效.另外,积分域必须没有边界(例如单位球),或者被积函数在接近域边界时变为零.  
