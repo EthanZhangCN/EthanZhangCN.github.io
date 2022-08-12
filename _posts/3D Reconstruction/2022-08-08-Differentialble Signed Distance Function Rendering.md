@@ -54,7 +54,9 @@ https://github.com/rgl-epfl/differentiable-sdf-rendering.
 ## 3 背景
 &emsp;&emsp;
 基于物理模型的渲染是,整个空间中光路径$\varphi$对像素j的积分来计算该点强度
+
 $$I_j(\pi) =\int_\varphi f_j(x,\pi)dx ----(1)$$
+
 式中:
 >$x$为一条光路径,   
 >$\pi$为含有场景参数(包括形状参数\纹理值等)的向量.  
@@ -67,8 +69,11 @@ $$I_j(\pi) =\int_\varphi f_j(x,\pi)dx ----(1)$$
 在可微分渲染中,我们的目标是区分该积分的值,以便于在一组大的场景参数上来最小化基于图像的目标函数.(如使用梯度下降).具体来说,我们要评估如下导数:
 
 $$\partial_\pi I_j(\pi)=\partial_\pi \int_\varphi f_j(x,\pi)dx----(2)$$
+
 如果被积函数不包含任何依赖于$\pi$的不连续性(被积函数涉及到$\pi$的地方都连续),我们使用莱布尼兹公式将偏导符号移入积分中并应用蒙特卡洛积分来评估导数:
+
 $$\partial_\pi I_j(\pi)= \int_\varphi \partial_\pi f_j(x,\pi)dx \approx \frac{1}{N} \overset{N} \sum \limits_{k=1} \frac{\partial_\pi f_j (x_k,\pi)}{p(x_k,\pi)}----(3)$$
+
 其中:
 > $N$ 采样数量  
 > $x_k$ 表示采样光路  
@@ -84,14 +89,20 @@ $$\partial_\pi I_j(\pi)= \int_\varphi \partial_\pi f_j(x,\pi)dx \approx \frac{1}
 另一种特别适合于单向路径跟踪的方法是对积分进行重新参数化.其思想是，这种重新参数化的被积函数应该没有参数相关的不连续性.基于此,可以再积分中移动导数运算符,并通过使用标准路径跟踪对光路进行采样来评估参数的导数. 如果我们正确地考虑了由于重新参数化引起的失真，这甚至可以产生无偏梯度估计器.  
 &emsp;&emsp;
 单向渲染算法可以表示为球面积分的递归解,因此下文中,我们将求导$S^2$方向的单位球体积分而不是全路径空间积分.
+
 $$\partial_\pi I(\pi) = \partial_\pi \int_{S^2}f(\omega,\pi)d\omega----(4)$$
+
 该公式暂时忽略了互反射影响,但也满足大多数推导,最后我们会把结果与一般情况联系起来.与之前的工作相似,我们不会处理由于全镜面相互作用导致的不连续性这种极具挑战的情况.(例如,通过水面观察到的几何结构)  
 &emsp;&emsp;
 给定这个球积分,我们可以使用变量$\tau$的变化来重新描述这个问题:  
 $S^2 \rightarrow S^2$ 将单位球体映射到自身,重新参数化的$\tau$就被选择使用,能够让生成的被积函数相对于场景参数没有不连续性,这样就可以把偏导算子移进积分:  
+
 $$\partial_\pi I(\pi) = \partial_\pi \int_{S^2} f(\omega,\pi)d\omega$$
+
 $$=\partial_\pi \int_{S^2}f(\tau(\omega,\pi),\pi)||D\tau_{\omega,\pi}(s) \times D\tau_{\omega,\pi}(t)||d\omega$$
+
 $$=\int_{S^2}\partial_\pi [f(\tau(\omega,\pi),\pi)||D\tau_{\omega,\pi}(s) \times D\tau_{\omega,\pi}(t)||]d\omega ----(5)$$
+
 其中:  
 > $s,t$ 是单位球体在$\omega$处的正交切向量  
 > $D\tau_{\omega,\pi}$ 是$\tau$关于向量$\omega$的微分  
